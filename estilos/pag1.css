@@ -1,30 +1,43 @@
 @charset "UTF-8";
 
 .pag1{
-    background-image: url('../imagens/fundo-texto1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    width: 1080px;
-    margin: auto;
-    padding-left: 2%;
+    height: 100%;
+    width: 85%;
+    padding: 40px 30px;
+    position: relative;
+    overflow: hidden;
+    animation: typing 1s steps(40) 1s normal;
 }
-.pag1>ul{
-    padding-top: 70px;
-    font-size: 1.5em;
-    font-weight: bold;
+
+.pag1 ul{
     list-style: inside;
     columns: 2;
+    font-weight: bold;
+    font-size: 1.3em;
 }
-p{
-    padding: 10px;
-    font-size: 0.9em;
+
+.pag1 li{
+    padding-top: 20px;
+}
+.pag1 p{
     font-weight: lighter;
+    font-size: 0.9em;
 }
-.img1{
+
+
+
+@keyframes typing {
+    from{
+        height: 0;
+    }
+    to {
+        height: 100%;
+    }
+}
+.pag1 img{
+    position: absolute;
     height: 250px;
     width: 270px;
-    position: relative;
-    bottom: 150px;
-    left: 80%;
+    top: 55%;
+    left: 70%;
 }
