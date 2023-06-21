@@ -1,0 +1,27 @@
+@charset "uft-8";
+
+.supervisor {
+    background-image: url("../imagens/quadro.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 900px;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -55%);
+}
+
+#setar {
+    height: 20vh;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+#setal {
+    height: 20vh;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}

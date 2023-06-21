@@ -1,49 +1,57 @@
 @charset "uft-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100vh;
     width: 100vw;
     background-color: #0b2135;
-    color:#fff;
+    color: #fff;
     overflow: hidden;
 }
-#logo{
+
+#logo {
     width: 45px;
 }
-.header, .navigation_header{
-display: flex;
-flex-direction: row;
-align-items: center;
+
+.header,
+.navigation_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-.header{
+
+.header {
     background-color: #113150;
     box-shadow: 1px 5px 6px #29527a;
     height: 56px;
     justify-content: space-between;
     padding: 0 5%;
 }
-.navigation_header{
+
+.navigation_header {
     gap: 3em;
 }
-.navigation_header a{
+
+.navigation_header a {
     text-decoration: none;
     color: #fff;
     transition: 1s;
     font-weight: bold;
     /* color: #A4CF37; */
 }
-.active{
+
+.active {
     background-color: #29527a;
     padding: 10px;
     border-radius: 10px;
 }
-.btn_icon_header{
+
+.btn_icon_header {
     display: none;
     background-color: transparent;
     border: none;
@@ -52,10 +60,11 @@ align-items: center;
 }
 
 @media screen and (max-width: 768px) {
-    .btn_icon_header{
+    .btn_icon_header {
         display: block;
     }
-    .navigation_header{
+
+    .navigation_header {
         position: absolute;
         flex-direction: column;
         top: 0;
@@ -67,27 +76,40 @@ align-items: center;
         margin-left: -100vw;
     }
 }
-@keyframes showSidebar{
-    from {margin-left: -100vw;}
-    top {margin-left: -10vw;}
+
+@keyframes showSidebar {
+    from {
+        margin-left: -100vw;
+    }
+
+    top {
+        margin-left: -10vw;
+    }
 }
 
-.content{
+.content {
     height: 100vh;
     transition: 1s;
     background-image: url("../imagens/fundo11.jpg");
+    background-size: cover;
     width: 100vw;
     margin: auto;
     position: relative;
 }
-.apresent{
-    background-image: url("../imagens/quadro.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 900px;
-    height: 80%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-45%,-55%);
+
+.apresent {
+    position: relative;
+    display: flex;
+}
+
+.apresent>img {
+    height: 70vh;
+    margin-top: 5%;
+}
+
+.apresent>p {
+    color: #000;
+    width: 40%;
+    margin: 15% 5% 5% 13%;
+    font-weight: bold;
 }

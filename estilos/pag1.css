@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.pag1{
+.pag1 {
     height: 100%;
     width: 85%;
     padding: 40px 30px;
@@ -9,17 +9,18 @@
     animation: typing 1s steps(40) 1s normal;
 }
 
-.pag1 ul{
+.pag1 ul {
     list-style: inside;
     columns: 2;
     font-weight: bold;
     font-size: 1.3em;
 }
 
-.pag1 li{
+.pag1 li {
     padding-top: 20px;
 }
-.pag1 p{
+
+.pag1 p {
     font-weight: lighter;
     font-size: 0.9em;
 }
@@ -27,14 +28,16 @@
 
 
 @keyframes typing {
-    from{
+    from {
         height: 0;
     }
+
     to {
         height: 100%;
     }
 }
-.pag1 img{
+
+.pag1 img {
     position: absolute;
     height: 250px;
     width: 270px;
