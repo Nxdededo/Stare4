@@ -1,15 +1,22 @@
 @charset "uft-8";
 
-.supervisor {
+.paginas {
     background-image: url("../imagens/quadro.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    width: 900px;
+    width: 771px;
     height: 80%;
     top: 50%;
     left: 50%;
     transform: translate(-45%, -55%);
+    overflow: hidden;
+}
+
+.supervisor {
+    display: flex;
+    height: 100%;
+    width: 500%;
 }
 
 #setar {
@@ -19,9 +26,26 @@
     right: 0;
 }
 
+:hover #setar,
+#setal {
+    cursor: pointer;
+}
+
 #setal {
     height: 20vh;
     position: absolute;
     top: 50%;
     left: 0;
+}
+
+/* #primeira:checked+.pag1 {
+    margin-left: 0;
+} */
+
+#antes:checked + #depois + .pag1 {
+    margin-left: 0;
+}
+
+#depois:checked+.pag1 {
+    margin-left: -20%;
 }
