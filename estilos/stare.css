@@ -1,9 +1,12 @@
 @charset "uft-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 }
 
 body {
@@ -22,8 +25,7 @@ body {
     font-size: 1.7em;
 }
 
-.header,
-.navigation_header {
+.header,.navigation_header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,12 +48,13 @@ body {
     color: #fff;
     transition: 1s;
     font-weight: bold;
+    padding: 5px;
     /* color: #A4CF37; */
 }
 
 .active {
     background-color: #29527a;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;
 }
 
@@ -116,6 +119,7 @@ body {
     width: 40%;
     margin: 15% 5% 5% 13%;
     font-weight: bold;
+    text-align: justify;
 }
 
 .apresent1 {
@@ -157,8 +161,30 @@ body {
     margin: 2.5%;
     height: 80%;
     width: 70%;
-    background-color: #fff;
+    background-image: url(../imagens/fundo-texto1.jpg);
+    background-size: cover;
+    color: black;
+}
 
+.quadro h1 {
+    text-align: center;
+    margin: 15px 30px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px black;
+    box-shadow: 0px 2px 3px -2px rgba(0, 0, 0, 0.3);
+}
+
+.quadro h2 {
+    text-align: center;
+    margin: 0px 150px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px black;
+    box-shadow: 0px 2px 3px -2px rgba(0, 0, 0, 0.3);
+}
+
+.quadro p {
+    margin: 20px;
+    text-indent: 30px;
 }
 
 .sobrep{
